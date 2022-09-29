@@ -1,5 +1,5 @@
 import string
-import random
+import secrets
 
 
 def genPass():
@@ -8,16 +8,16 @@ def genPass():
     p=""
     for i in range(length):
         #get random int to figure if char is going to be letter, number, or symbol
-        c=random.randint(0, 2)
+        c=secrets.choice(range(0,3))
         
         #takes num c and translates it into what char type it will be
         if(c==0):
-            p+=str(random.choice(string.ascii_letters))
+            p+=str(secrets.choice(string.ascii_letters))
        
         elif(c==1):
-            p+=str(random.choice(symbols))
+            p+=str(secrets.choice(symbols))
         elif(c==2):
-            p+=str(random.randint(0, 9))
+            p+=str(secrets.choice(range(0, 9)))
     
     
     
