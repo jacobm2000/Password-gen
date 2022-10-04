@@ -1,0 +1,21 @@
+h1 {
+text-decoration: underline; 
+margin-bottom: 5rem;
+text-align: center;
+font-size: xx-large;
+}
+body{
+    background-color: bisque;
+}
+p{
+  
+    text-align: center;
+
+}
+#getP{
+    margin-bottom: 5rem;
+    font-size: xx-large;
+}
+#out{
+    font-size: xx-large;
+}
